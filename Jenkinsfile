@@ -30,6 +30,8 @@ pipeline {
 		 sh "docker push ${docker_repo_uri}:${commit_id}"
 		 // Clean up
 		 sh "docker rmi -f ${docker_repo_uri}:${commit_id}"
+		 // RUN 
+		 sh "docker run -it ${docker_repo_uri}:${commit_id}"
 		}
 	}
     }
