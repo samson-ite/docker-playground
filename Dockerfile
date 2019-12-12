@@ -12,6 +12,6 @@ ADD index.html /usr/apps/hello-docker/index.html
 
 WORKDIR /usr/apps/hello-docker/
 
-CMD ["http-server", "-s"]
+CMD ["http-server", "-a", "localhost", "-p", "80"]
 
 
