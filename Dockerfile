@@ -6,7 +6,7 @@ RUN apt-get install -y npm
 
 RUN npm install -g http-server
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+#RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 ADD index.html /usr/apps/hello-docker/index.html
 
