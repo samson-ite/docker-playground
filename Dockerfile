@@ -12,4 +12,8 @@ ADD index.html /usr/apps/hello-docker/index.html
 
 WORKDIR /usr/apps/hello-docker/
 
-CMD ["http-server", "-a", "localhost", "-p", "8081"]
+CMD http-server -a localhost -p 8081
+
+EXPOSE 8081
+
+#ENTRYPOINT ["/usr/local/bin/http-server -a localhost -p 8081"]
